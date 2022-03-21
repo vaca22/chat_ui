@@ -299,8 +299,8 @@ class _ChatPageState extends State<ChatPage> {
               Container(
                 margin: EdgeInsets.only(right: 15),
                 alignment: Alignment.center,
-                width: 30,
-                height: 30,
+                width: 50,
+                height: 50,
                 decoration: BoxDecoration(
                     color: Color(0xFF464EB5),
                     borderRadius: BorderRadius.all(Radius.circular(15))),
@@ -320,14 +320,7 @@ class _ChatPageState extends State<ChatPage> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   Padding(
-                    child: Text(
-                      item['name'],
-                      softWrap: true,
-                      style: TextStyle(
-                        color: Color(0xFF677092),
-                        fontSize: 14,
-                      ),
-                    ),
+                    child: Container(),
                     padding: EdgeInsets.only(right: 20),
                   ),
                   Stack(
@@ -374,27 +367,7 @@ class _ChatPageState extends State<ChatPage> {
                           ),
                           Container(
                               margin: EdgeInsets.fromLTRB(0, 8, 8, 0),
-                              child: /*item['status'] == SENDING_TYPE
-                                  ? ConstrainedBox(
-                                constraints:
-                                BoxConstraints(maxWidth: 10, maxHeight: 10),
-                                child: Container(
-                                  width: 10,
-                                  height: 10,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2.0,
-                                    valueColor: new AlwaysStoppedAnimation<Color>(
-                                        Colors.grey),
-                                  ),
-                                ),
-                              )
-                                  : item['status'] == FAILED_TYPE
-                                  ? Image(
-                                  width: 11,
-                                  height: 20,
-                                  image: AssetImage(
-                                      "asssets/images/network_error_icon.png"))
-                                  :*/ Container()),
+                              child: Container()),
                         ],
                       ),
                     ],

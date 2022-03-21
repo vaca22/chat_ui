@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ChatPage.dart';
 import 'MyHomePage.dart';
 import 'MyHomePage2.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage2(title: 'Flutter me Page',orderNo: "12",),
+      home: const ChatPage(title: 'Flutter me Page',orderNo: "12",),
     );
   }
 }

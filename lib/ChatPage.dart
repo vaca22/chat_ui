@@ -53,7 +53,7 @@ class _ChatPageState extends State<ChatPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('协催回复'),
+        title: Text('哈哈'),
       ),
       body: Container(
         width: double.infinity,

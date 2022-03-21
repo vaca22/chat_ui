@@ -1,10 +1,11 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage2 extends StatefulWidget {
-  const MyHomePage2({Key? key, required this.title, required this.orderNo}) : super(key: key);
+  const MyHomePage2({Key? key,required this.title, required this.orderNo}) : super(key: key);
   final String orderNo;
 
   final String title;
@@ -42,7 +43,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
 
     setState(() {
 
-      list = (res.data as List).reversed.toList();
+      // list = (res.data as List).reversed.toList();
     });
   }
 
@@ -182,7 +183,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
         children: <Widget>[
           Padding(
             child: Text(
-              CommonUtils.timeStampFormat(item['createdAt']),
+             " CommonUtils.timeStampFormat(item['createdAt'])",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Color(0xFFA1A6BB),
@@ -237,7 +238,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                                 width: 11,
                                 height: 20,
                                 image: AssetImage(
-                                    "static/images/chat_white_arrow.png")),
+                                    "static/images/a940.png")),
                             margin: EdgeInsets.fromLTRB(2, 16, 0, 0),
                           ),
                           Container(
@@ -282,7 +283,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
         children: <Widget>[
           Padding(
             child: Text(
-              CommonUtils.timeStampFormat(item['createdAt']),
+              "CommonUtils.timeStampFormat(item['createdAt'])",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Color(0xFFA1A6BB),
@@ -337,7 +338,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                             width: 11,
                             height: 20,
                             image: AssetImage(
-                                "static/images/chat_purple_arrow.png")),
+                                "assets/images/a940.png")),
                         margin: EdgeInsets.fromLTRB(0, 16, 2, 0),
                       ),
                       Row(
@@ -392,7 +393,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                                   width: 11,
                                   height: 20,
                                   image: AssetImage(
-                                      "static/images/network_error_icon.png"))
+                                      "asssets/images/network_error_icon.png"))
                                   : Container()),
                         ],
                       ),

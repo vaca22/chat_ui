@@ -238,7 +238,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                                 width: 11,
                                 height: 20,
                                 image: AssetImage(
-                                    "static/images/a940.png")),
+                                    "assets/images/a940.png")),
                             margin: EdgeInsets.fromLTRB(2, 16, 0, 0),
                           ),
                           Container(

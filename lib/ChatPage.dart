@@ -278,10 +278,10 @@ class _ChatPageState extends State<ChatPage> {
 
   Widget _renderRowSendByMe(BuildContext context, item) {
     return Container(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
       child: Column(
         children: <Widget>[
-          Padding(
+          const Padding(
             child: Text(
               "",
               textAlign: TextAlign.center,
@@ -301,14 +301,14 @@ class _ChatPageState extends State<ChatPage> {
                 alignment: Alignment.center,
                 width: 50,
                 height: 50,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Color(0xFF464EB5),
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 child: Padding(
                   child: Text(
                     item['name'].toString().substring(0, 1),
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14,
                     ),
@@ -327,7 +327,7 @@ class _ChatPageState extends State<ChatPage> {
                     alignment: Alignment.topRight,
                     children: <Widget>[
                       Container(
-                        child: Image(
+                        child: const Image(
                             width: 11,
                             height: 20,
                             image: AssetImage(
@@ -339,8 +339,8 @@ class _ChatPageState extends State<ChatPage> {
                         children: <Widget>[
                           ConstrainedBox(
                             child: Container(
-                              margin: EdgeInsets.only(top: 8, right: 10),
-                              decoration: BoxDecoration(
+                              margin: const EdgeInsets.only(top: 8, right: 10),
+                              decoration: const BoxDecoration(
                                   boxShadow: [
                                     BoxShadow(
                                       offset: Offset(4.0, 7.0),
@@ -355,7 +355,7 @@ class _ChatPageState extends State<ChatPage> {
                               child: Text(
                                 item['reply'],
                                 softWrap: true,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,
                                 ),
